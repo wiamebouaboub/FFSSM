@@ -24,10 +24,13 @@ public class Club {
     }
 
     public Set<Plongee> plongeesNonConformes() {
-        return null;
+         // TODO: Implémenter cette méthode
+        throw new UnsupportedOperationException("Pas encore implémenté");
     }
 
     public void organisePlongee(Plongee p) {
+         // TODO: Implémenter cette méthode
+        throw new UnsupportedOperationException("Pas encore implémenté");
     }
     
     

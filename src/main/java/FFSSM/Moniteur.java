@@ -18,14 +18,18 @@ public class Moniteur extends Personne {
     }
 
     public Club employeur() {
-        return null;             
+         // TODO: Implémenter cette méthode
+        throw new UnsupportedOperationException("Pas encore implémenté");
     }
     
-    public void nouvelleEmbauche(Club employeur, Calendar debutNouvelle) {      
+    public void nouvelleEmbauche(Club employeur, Calendar debutNouvelle) {   
+         // TODO: Implémenter cette méthode
+        throw new UnsupportedOperationException("Pas encore implémenté");	    
     }
 
     public List<Embauche> emplois() {
-        return null;
+         // TODO: Implémenter cette méthode
+        throw new UnsupportedOperationException("Pas encore implémenté");
     }
 
 }
