@@ -47,6 +47,7 @@ public class Licence {
 
     /**
      * Est-ce que la licence est valide à la date indiquée ?
+     * Une licence est valide pendant un an à compter de sa date de délivrance
      * @param d la date à tester
      * @return vrai si valide à la date d
      **/

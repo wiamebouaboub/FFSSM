@@ -17,11 +17,21 @@ public class Moniteur extends Personne {
         this.numeroDiplome = numeroDiplome;
     }
 
-    public Club employeur() {
+    /**
+     * Si ce moniteur n'a pas d'embauche, ou si sa dernière embauche est terminée,
+     * ce moniteur n'a pas d'employeur.
+     * @return l'employeur actuel de ce moniteur, ou null
+     */
+    public Club employeurActuel() {
          // TODO: Implémenter cette méthode
         throw new UnsupportedOperationException("Pas encore implémenté");
     }
     
+    /**
+     * Enregistrer une nouvelle embauche pour cet employeur
+     * @param employeur le club employeur
+     * @param debutNouvelle la date de début de l'embauche
+     */
     public void nouvelleEmbauche(Club employeur, Calendar debutNouvelle) {   
          // TODO: Implémenter cette méthode
         throw new UnsupportedOperationException("Pas encore implémenté");	    
