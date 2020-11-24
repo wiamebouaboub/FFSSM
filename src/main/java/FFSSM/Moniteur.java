@@ -19,7 +19,7 @@ public class Moniteur extends Personne {
     /**
      * Si ce moniteur n'a pas d'embauche, ou si sa dernière embauche est terminée,
      * ce moniteur n'a pas d'employeur.
-     * @return l'employeur actuel de ce moniteur, ou null
+     * @return l'employeur actuel de ce moniteur sous la forme d'un Optional
      */
     public Optional<Club> employeurActuel() {
          // TODO: Implémenter cette méthode
