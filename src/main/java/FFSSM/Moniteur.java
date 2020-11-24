@@ -5,6 +5,7 @@ package FFSSM;
 
 import java.time.LocalDate;
 import java.util.List;
+import java.util.Optional;
 
 public class Moniteur extends Personne {
 
@@ -20,7 +21,7 @@ public class Moniteur extends Personne {
      * ce moniteur n'a pas d'employeur.
      * @return l'employeur actuel de ce moniteur, ou null
      */
-    public Club employeurActuel() {
+    public Optional<Club> employeurActuel() {
          // TODO: Implémenter cette méthode
         throw new UnsupportedOperationException("Pas encore implémenté");
     }
