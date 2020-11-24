@@ -3,7 +3,7 @@
  */
 package FFSSM;
 
-import java.util.Calendar;
+import java.time.LocalDate;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -13,13 +13,13 @@ public class Plongee {
 
 	public Moniteur chefDePalanquee;
 
-	public Calendar date;
+	public LocalDate date;
 
 	public int profondeur;
 
 	public int duree;
 
-	public Plongee(Site lieu, Moniteur chefDePalanquee, Calendar date, int profondeur, int duree) {
+	public Plongee(Site lieu, Moniteur chefDePalanquee, LocalDate date, int profondeur, int duree) {
 		this.lieu = lieu;
 		this.chefDePalanquee = chefDePalanquee;
 		this.date = date;
@@ -32,7 +32,7 @@ public class Plongee {
 		throw new UnsupportedOperationException("Pas encore implémenté");
 	}
 
-	public Calendar getDate() {
+	public LocalDate getDate() {
 		return date;
 	}
 

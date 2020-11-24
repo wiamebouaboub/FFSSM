@@ -3,7 +3,7 @@
  */
 package FFSSM;
 
-import java.util.Calendar;
+import java.time.LocalDate;
 
 public class Licence {
 
@@ -11,13 +11,13 @@ public class Licence {
 
     public String numero;
 
-    public Calendar delivrance;
+    public LocalDate delivrance;
 
     public int niveau;
 
     public Club club;
 
-    public Licence(Personne possesseur, String numero, Calendar delivrance, int niveau, Club club) {
+    public Licence(Personne possesseur, String numero, LocalDate delivrance, int niveau, Club club) {
         this.possesseur = possesseur;
         this.numero = numero;
         this.delivrance = delivrance;
@@ -33,7 +33,7 @@ public class Licence {
         return numero;
     }
 
-    public Calendar getDelivrance() {
+    public LocalDate getDelivrance() {
         return delivrance;
     }
 
@@ -51,7 +51,7 @@ public class Licence {
      * @param d la date à tester
      * @return vrai si valide à la date d
      **/
-    public boolean estValide(Calendar d) {
+    public boolean estValide(LocalDate d) {
          // TODO: Implémenter cette méthode
         throw new UnsupportedOperationException("Pas encore implémenté");
     }

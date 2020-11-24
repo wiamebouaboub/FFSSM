@@ -3,16 +3,14 @@
  */
 package FFSSM;
 
-import java.util.Calendar;
-import java.util.Collections;
-import java.util.LinkedList;
+import java.time.LocalDate;
 import java.util.List;
 
 public class Moniteur extends Personne {
 
     public int numeroDiplome;
 
-    public Moniteur(String numeroINSEE, String nom, String prenom, String adresse, String telephone, Calendar naissance, int numeroDiplome) {
+    public Moniteur(String numeroINSEE, String nom, String prenom, String adresse, String telephone, LocalDate naissance, int numeroDiplome) {
         super(numeroINSEE, nom, prenom, adresse, telephone, naissance);
         this.numeroDiplome = numeroDiplome;
     }
@@ -32,7 +30,7 @@ public class Moniteur extends Personne {
      * @param employeur le club employeur
      * @param debutNouvelle la date de début de l'embauche
      */
-    public void nouvelleEmbauche(Club employeur, Calendar debutNouvelle) {   
+    public void nouvelleEmbauche(Club employeur, LocalDate debutNouvelle) {   
          // TODO: Implémenter cette méthode
         throw new UnsupportedOperationException("Pas encore implémenté");	    
     }

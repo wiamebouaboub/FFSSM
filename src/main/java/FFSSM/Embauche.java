@@ -1,18 +1,18 @@
 package FFSSM;
 
-import java.util.Calendar;
+import java.time.LocalDate;
 
 public class Embauche {
 
-    private Calendar debut;
+    private LocalDate debut;
 
-    private Calendar fin;
+    private LocalDate fin;
 
     private final Moniteur employe;
 
     private final Club employeur;
 
-    public Embauche(Calendar debut, Moniteur employe, Club employeur) {
+    public Embauche(LocalDate debut, Moniteur employe, Club employeur) {
         this.debut = debut;
         this.employe = employe;
         this.employeur = employeur;
@@ -22,7 +22,7 @@ public class Embauche {
      * Termine cette embauche
      * @param dateFin la date à laquelle cette embauche est terminée
      */
-    public void terminer(Calendar dateFin) {
+    public void terminer(LocalDate dateFin) {
          // TODO: Implémenter cette méthode
         throw new UnsupportedOperationException("Pas encore implémenté");	    
     }
@@ -57,7 +57,7 @@ public class Embauche {
      *
      * @return the value of fin
      */
-    public Calendar getFin() {
+    public LocalDate getFin() {
         return fin;
     }
 
@@ -66,7 +66,7 @@ public class Embauche {
      *
      * @param fin new value of fin
      */
-    public void setFin(Calendar fin) {
+    public void setFin(LocalDate fin) {
         this.fin = fin;
     }
 
@@ -75,7 +75,7 @@ public class Embauche {
      *
      * @return the value of debut
      */
-    public Calendar getDebut() {
+    public LocalDate getDebut() {
         return debut;
     }
 

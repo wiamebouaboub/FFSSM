@@ -4,7 +4,7 @@
 
 package FFSSM;
 
-import java.util.Calendar;
+import java.time.LocalDate;
 
 public class Personne
 {
@@ -18,9 +18,9 @@ public class Personne
 	
 	public String telephone;
 	
-	public Calendar naissance;
+	public LocalDate naissance;
 
-    public Personne(String numeroINSEE, String nom, String prenom, String adresse, String telephone, Calendar naissance) {
+    public Personne(String numeroINSEE, String nom, String prenom, String adresse, String telephone, LocalDate naissance) {
         setNumeroINSEE(numeroINSEE); // Le mutateur fait le contrôle non null
         this.nom = nom;
         this.prenom = prenom;
@@ -72,11 +72,11 @@ public class Personne
         this.telephone = telephone;
     }
 
-    public Calendar getNaissance() {
+    public LocalDate getNaissance() {
         return naissance;
     }
 
-    public void setNaissance(Calendar naissance) {
+    public void setNaissance(LocalDate naissance) {
         this.naissance = naissance;
     }	
 }
