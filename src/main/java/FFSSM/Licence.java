@@ -13,15 +13,12 @@ public class Licence {
 
     public LocalDate delivrance;
 
-    public int niveau;
-
     public Club club;
 
-    public Licence(Personne possesseur, String numero, LocalDate delivrance, int niveau, Club club) {
+    public Licence(Personne possesseur, String numero, LocalDate delivrance, Club club) {
         this.possesseur = possesseur;
         this.numero = numero;
         this.delivrance = delivrance;
-        this.niveau = niveau;
         this.club = club;
     }
 
@@ -35,10 +32,6 @@ public class Licence {
 
     public LocalDate getDelivrance() {
         return delivrance;
-    }
-
-    public int getNiveau() {
-        return niveau;
     }
 
     public Club getClub() {
